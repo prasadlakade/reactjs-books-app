@@ -216,7 +216,7 @@ class FormContainer extends Component {
                   </td>
                 </tr>
               ))}
-              {this.state.books === '' && (
+              {this.state.books == '' && (
                 <tr>
                   <td colSpan={4}>No Data found</td>
                 </tr>
