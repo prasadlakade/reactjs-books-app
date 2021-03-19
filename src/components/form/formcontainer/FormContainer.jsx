@@ -210,7 +210,7 @@ class FormContainer extends Component {
                       className={'delete'}
                       variant={'danger'}
                       size={'sm'}
-                      value={'X'}
+                      value={'Delete Book'}
                       handleClick={this.deleteBook}
                     />
                   </td>
