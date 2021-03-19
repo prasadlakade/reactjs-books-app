@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import { Form, Row, Col, Table } from 'react-bootstrap';
+import Form from 'react-bootstrap/Form';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Table from 'react-bootstrap/Table';
 import Input from '../input/Input';
 import RButton from '../button/RButton';
 
@@ -94,7 +97,6 @@ class FormContainer extends Component {
   }
 
   render() {
-    const { validation } = this.state;
     return (
       <div>
         <div className='form-wrapper'>
@@ -214,7 +216,7 @@ class FormContainer extends Component {
                   </td>
                 </tr>
               ))}
-              {this.state.books == '' && (
+              {this.state.books === '' && (
                 <tr>
                   <td colSpan={4}>No Data found</td>
                 </tr>
