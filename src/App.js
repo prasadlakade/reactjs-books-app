@@ -1,23 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+
+import { Container, Row, Col } from 'react-bootstrap';
+import FormContainer from './components/form/formcontainer/FormContainer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className='App'>
+      <header className='App-header'>
+        <Container>
+          <Row>
+            <Col className='text-center'>
+              <h1> Books App </h1>
+              <span> Reactjs Book library with localstorage </span>
+            </Col>
+          </Row>
+        </Container>
       </header>
+      <hr />
+      <main>
+        <Container>
+          <Row>
+            <Col>
+              <FormContainer></FormContainer>
+            </Col>
+          </Row>
+        </Container>
+      </main>
+      <footer></footer>
     </div>
   );
 }
